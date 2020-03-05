@@ -1,0 +1,39 @@
+/* 公共样式 */
+body{
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+a:hover{
+    text-decoration: none;
+    color: #333;
+}
+@font-face{
+    font-family: 'wjs';
+    src: url('../fonts/glyphicons-halflings-regular.eot');/*IE9*/
+    src: url('../fonts/glyphicons-halflings-regular.eot') format('embedded-opentype'),/*IE6-8*/
+    url('../fonts/glyphicons-halflings-regular.woff') format('woff'),/*chrome   firefox*/
+    url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'),/*chrome,firefox,opera,safari,android,ios 4.2+*/
+    url('../fonts/glyphicons-halflings-regular.svg') format('svg');/*ios 4.1-*/
+}
+/* 自定义字体使用样式 */
+.wjs_icon{
+    font-family: wjs;
+}
+/* 手机图标对应的编码 */
+.wjs_icon_phone::before{
+    content: "\e908";
+}
+/* 电话图标对应的编码 */
+.wjs_icon_tel::before{
+    content: "\e909";
+    font-style: 14px;
+}
+/* wjs logo */
+.wjs_icon_logo::before{
+    content: "\e920";
+}
